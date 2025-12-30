@@ -1334,16 +1334,6 @@
                                                 <div class="facility-value">${props.ADDRESS_TC || '地址不詳'}</div>
                                             </div>
                                         </div>
-                                        <div>
-                                            <div class="facility-row">
-                                                <div class="facility-label">緯度:</div>
-                                                <div class="facility-value">${lat ? lat.toFixed(6) : 'N/A'}</div>
-                                            </div>
-                                            <div class="facility-row">
-                                                <div class="facility-label">經度:</div>
-                                                <div class="facility-value">${lng ? lng.toFixed(6) : 'N/A'}</div>
-                                            </div>
-                                        </div>
                                     </div>
                                     ${hasCoordinates ? '<p style="color: #14b8a6; font-size: 0.8rem; margin-top: 8px;"><i class="fas fa-map-marker-alt"></i> 點擊此項目查看地圖位置</p>' : ''}
                                 </div>
@@ -1517,12 +1507,6 @@
                     </span>
                 </div>
             ` : ''}
-            <div style="margin-bottom: 8px;">
-                <strong style="color: #374151;">座標:</strong> 
-                <span style="font-family: monospace; font-size: 12px;">
-                    ${lat.toFixed(6)}, ${lng.toFixed(6)}
-                </span>
-            </div>
             ${props.LASTUPDATE ? `
                 <div style="margin-bottom: 8px;">
                     <strong style="color: #374151;">最後更新:</strong> ${props.LASTUPDATE}
